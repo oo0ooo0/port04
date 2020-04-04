@@ -56,7 +56,7 @@ const StyledHeader = styled.header`
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     .main-menu-wrap {
       .header-cont {
         display: block;
@@ -68,11 +68,12 @@ const StyledHeader = styled.header`
           margin-top: 20px;
           width: 100%;
           ul {
-            justify-content: center;
+            justify-content: space-around;
             margin-left: 0px;
             padding: 0px 4%;
             li {
-              padding: 5px 0;
+              padding: 5px 0px;
+              margin-left: 0px;
               a {
                 font-size: 15px;
                 margin-bottom: 5px;
@@ -100,7 +101,10 @@ function Header() {
           <div className='gnb'>
             <ul>
               <li>
-                <Link to={{ pathname: `/` }}>ABOUT</Link>
+                <Link to={{ pathname: `/` }}>HOME</Link>
+              </li>
+              <li>
+                <Link to={{ pathname: `/about` }}>ABOUT</Link>
               </li>
               <li>
                 <Link to={{ pathname: `/works` }}>WORKS</Link>
