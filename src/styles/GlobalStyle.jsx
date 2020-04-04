@@ -60,6 +60,8 @@ h1 {
 h2 {
   font: normal 900 32px/48px 'Lato';
   color: #1d1e21;
+  border-bottom: 1px solid lightGray;
+
 }
 
 h3 {
@@ -110,7 +112,8 @@ button {
   background: none;
   outline: none;
   cursor: pointer;
-  display: inline-block;}
+  display: block;
+  }
 
 /* IR effect */
 .ir_pm {
