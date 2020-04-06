@@ -23,13 +23,15 @@ const StyledComments = styled.div`
       border: 1px solid gray;
       font: normal 500 15px/1.5 'Lato';
       padding: 10px 15px;
-      width: calc(100% - 140px);
+      width: 59%;
+      min-width: 59%;
       height: 100%;
       border-radius: 0;
     }
 
     .button_comment {
-      width: 134px;
+      width: 40%;
+      min-width: 40%;
       height: 100%;
       background: #1d1e21;
       font: normal 500 15px/2 'Lato';
@@ -89,7 +91,7 @@ const StyledComments = styled.div`
 
 function Comments() {
   const params = useParams();
-  const commentsId = useSelector(state => state.comments[params.id]);
+  const commentsId = useSelector((state) => state.comments[params.id]);
   const comments = commentsId && commentsId.comments;
 
   return (
@@ -106,7 +108,7 @@ function Comments() {
       </div>
 
       {comments &&
-        comments.map(comment => {
+        comments.map((comment) => {
           return <Comment key={comment.id} {...comment} />;
         })}
     </StyledComments>
