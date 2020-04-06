@@ -10,7 +10,7 @@ const StyledHeader = styled.header`
   z-index: 10;
 
   .main-menu-wrap {
-    margin-top: 30px;
+    margin-top: 20px;
     border-bottom: 1px solid lightGray;
     .header-cont {
       width: 92%;
@@ -65,7 +65,7 @@ const StyledHeader = styled.header`
           font-size: 45px;
         }
         .gnb {
-          margin-top: 20px;
+          margin-top: 10px;
           width: 100%;
           ul {
             justify-content: space-around;

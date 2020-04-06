@@ -9,6 +9,6 @@ export const LayoutContainer = styled.div`
 export const MainContainer = styled(LayoutContainer)`
   margin-top: 230px;
   @media (max-width: 960px) {
-    margin-top: 200px;
+    margin-top: 230px;
   }
 `;
