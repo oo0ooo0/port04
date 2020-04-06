@@ -16,7 +16,7 @@ const StyledWorkDetailWrapper = styled.div`
     flex: none;
     margin-left: 4%;
     width: 34%;
-    min-height: ${props => props.boardHeight}px;
+    min-height: ${(props) => props.boardHeight}px;
 
     img {
       width: 100%;
@@ -31,9 +31,9 @@ const BoardArea = styled.div`
   width: 56%;
   max-width: 990px;
   flex: none;
-  position: ${props => (props.isScrolled ? `absolute` : 'fixed')};
-  top: ${props => (props.isScrolled ? 'inherit' : '230px')};
-  bottom: ${props => (props.isScrolled ? '0' : 'inherit')};
+  position: ${(props) => (props.isScrolled ? `absolute` : 'fixed')};
+  top: ${(props) => (props.isScrolled ? 'inherit' : '230px')};
+  bottom: ${(props) => (props.isScrolled ? '0' : 'inherit')};
   left: 40%;
   .board {
     width: 100%;
@@ -42,7 +42,6 @@ const BoardArea = styled.div`
     }
     em {
       font: normal 400 16px/1 'Lato';
-      margin-left: 10px;
     }
     h1 {
       min-height: 60px;
@@ -69,9 +68,9 @@ function WorkDetail() {
   const [isScrolled, setScrolled] = useState(false);
   const [boardHeight, setBoardHeight] = useState(0);
 
-  const item = useSelector(state => state.works[params.id] || null);
+  const item = useSelector((state) => state.works[params.id] || null);
 
-  const handleScrollEvent = event => {
+  const handleScrollEvent = (event) => {
     if (mediaListRef.current && boardRef.current) {
       const boardRect = boardRef.current.getBoundingClientRect();
 
@@ -107,14 +106,8 @@ function WorkDetail() {
     history.push('/');
     return null;
   }
-  const {
-    tags,
-    text,
-    mediaList,
-    mdInfo: { mdName },
-    createdAt,
-  } = item;
-
+  const { text, mediaList, createdAt, siteSrc } = item;
+  console.log(siteSrc);
   return (
     <StyledWorkDetailWrapper boardHeight={boardHeight}>
       <div className='media-list-area' ref={mediaListRef}>
@@ -125,13 +118,9 @@ function WorkDetail() {
 
       <BoardArea isScrolled={isScrolled} className='board-area' ref={boardRef}>
         <div className='board'>
-          <span>{mdName}</span>
           <em>{createdAt}</em>
-          <h1>{createTitle(text)}</h1>
+          <h4>{createTitle(text)}</h4>
           <WorkText>{text}</WorkText>
-          {tags.map((tag, index) => {
-            return <strong key={index}>#{tag}</strong>;
-          })}
         </div>
         <Comments />
       </BoardArea>
