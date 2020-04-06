@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const LayoutContainer = styled.div`
-  width: ${props => props.width || 92}%;
+  width: ${(props) => props.width || 92}%;
   margin: 10px auto;
   position: relative;
 `;
