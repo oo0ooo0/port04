@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const StyledContact = styled.main`
   height: 65vh;
   .container {
-    border-bottom: 1px solid lightgray;
     width: 100%;
     display: flex;
     flex-direction: column;
