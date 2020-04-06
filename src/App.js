@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import Footer from './Footer';
 import About from './About';
 import Contact from './Contact';
 import GlobalStyle from './styles/GlobalStyle';
@@ -17,11 +18,11 @@ function App() {
           <Route path={'/about'} exact>
             <About />
           </Route>
-
           <Route path={'/contact'} exact>
             <Contact />
           </Route>
         </MainContainer>
+        <Footer />
       </BrowserRouter>
     </div>
   );
