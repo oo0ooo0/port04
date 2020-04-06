@@ -42,15 +42,6 @@ const StyledAbout = styled.main`
           margin-bottom: 30px;
         }
       }
-      button {
-        margin-top: 30px;
-        a {
-          padding: 2px 5px;
-          font-size: 15px;
-          border: 1px solid lightgray;
-          border-radius: 5px;
-        }
-      }
     }
   }
 
@@ -140,7 +131,7 @@ function About() {
               </ul>
             </li>
           </ul>
-          <button>
+          <button className='btn'>
             <a href=''>Resume link</a>
           </button>
         </div>

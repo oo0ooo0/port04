@@ -51,6 +51,16 @@ a:hover {
   color: #1d1e21;
 }
 
+button.btn {
+        margin-top: 30px;
+        a {
+          padding: 2px 5px;
+          font-size: 15px;
+          border: 1px solid lightgray;
+          border-radius: 5px;
+        }
+      }
+
 /* title reset  */
 h1 {
   font: normal 900 48px/48px 'Lato';
