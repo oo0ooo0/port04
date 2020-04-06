@@ -121,6 +121,9 @@ function WorkDetail() {
           <em>{createdAt}</em>
           <h4>{createTitle(text)}</h4>
           <WorkText>{text}</WorkText>
+          <button className='btn'>
+            <a href='{siteSrc}'>사이트방문하기</a>
+          </button>
         </div>
         <Comments />
       </BoardArea>
