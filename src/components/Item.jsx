@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import { createTitle } from '../utils/common';
+
 import styled from 'styled-components';
 import LikedButton from './LikedButton';
 import WorkText from './WorkText';
@@ -11,33 +13,19 @@ const StyledItem = styled.div`
       width: 100%;
     }
   }
-  .item-md {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    .item-md-image {
-      padding-top: 10px;
-      margin-right: 10px;
-      height: 70px;
-    }
-    .item-md-name {
-      font-size: 20px;
-      line-height: 60px;
-    }
-  }
+
   .item-info {
-    .tags {
-      margin-bottom: 10px;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      h4 {
-        margin-right: 10px;
-      }
-    }
-    ${WorkText} {
-      max-height: 263px;
-    }
+    width: 100%;
+    display: inline-block;
+    min-height: 40px;
+    max-height: 40px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 
   .item-footer {
@@ -83,11 +71,9 @@ const MemoizeItem = React.memo(function Item({
   id,
   mediaList,
   text,
-  mdInfo: { mdName, mdThumb },
   likedCount = 0,
   replyCount = 0,
   sharedCount = 0,
-  tags,
   createdAt,
   isLiked,
 }) {
@@ -105,18 +91,7 @@ const MemoizeItem = React.memo(function Item({
           <img src={mediaList[0].url} className='item-image' alt='피드 대표이미지' />
         </figure>
 
-        <figure className='item-md'>
-          <img src={mdThumb} className='item-md-image' alt='엠디 이미지' />
-          <figcaption className='item-md-name'>{mdName}</figcaption>
-        </figure>
-        <article className='item-info'>
-          <div className='tags'>
-            {tags.map((tag, index) => {
-              return <h4 key={index}>#{tag}</h4>;
-            })}
-          </div>
-          <WorkText className='item-text'>{text}</WorkText>
-        </article>
+        <article className='item-info'></article>
       </Link>
       <div className='item-footer'>
         <em className='item-date'>{createdAt}</em>
