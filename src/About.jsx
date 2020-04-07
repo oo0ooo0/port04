@@ -6,38 +6,48 @@ const StyledAbout = styled.main`
     display: flex;
     justify-content: space-between;
 
-    .name-wrap {
-      text-align: center;
-      width: 20%;
-      text-align: left;
-      .name {
-        font-size: 30px;
-      }
-      small {
-        font-size: 13px;
-        white-space: nowrap;
+    .image-wrap {
+      /* border: 1px solid red; */
+      display: flex;
+      width: 30%;
+      height: 30%;
+      img {
+        width: 100%;
+        height: 100%;
+        flex: none;
       }
     }
+
     .textWrap {
       width: 70%;
       text-align: left;
       padding: 0px 20px;
-
-      p {
-        font-size: 18px;
-        margin-bottom: 20px;
-      }
-      ul {
-        width: 100%;
-        font-size: 15px;
-        margin-top: 10px;
-        li {
-          width: 100%;
+      .name-wrap {}
+        margin-bottom: 30px;
+        .name {
+          font-size: 30px;
         }
-        .work,
-        .edu {
-          display: inline-block;
-          margin-bottom: 30px;
+        small {
+          font-size: 13px;
+          white-space: nowrap;
+        }
+
+        p {
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+        ul {
+          width: 100%;
+          font-size: 15px;
+          margin-top: 10px;
+          li {
+            width: 100%;
+          }
+          .work,
+          .edu {
+            display: inline-block;
+            margin-bottom: 30px;
+          }
         }
       }
     }
@@ -46,15 +56,19 @@ const StyledAbout = styled.main`
   @media (max-width: 960px) {
     main {
       display: block;
-      .name-wrap {
-        padding: 30px 0px 30px 0px;
-        text-align: center;
+      .image-wrap {
+        justify-content: center;
         width: 100%;
+        height: 30%;
+        img {
+          width: 50%;
+          height: 100%;
+         }
       }
       .textWrap {
-        /* padding-top: 50px; */
         border-top: 0px solid lightGray;
         border-bottom: 0px solid lightGray;
+        margin-top: 30px;
         width: 100%;
         text-align: center;
         button {
@@ -76,14 +90,16 @@ function About() {
       <h2 className='title'>About</h2>
 
       <main className='container'>
-        <div className='name-wrap'>
-          <h3 className='name'>
-            <strong>KWON_JAMIN.</strong>
-          </h3>
-          <small>Web_Publisher. Front_end_Developer.</small>
+        <div className='image-wrap'>
+          <img src='./img/About.jpg' alt='about image'></img>
         </div>
-
         <div className='textWrap'>
+          <div className='name-wrap'>
+            <h3 className='name'>
+              <strong>KWON_JAMIN.</strong>
+            </h3>
+            <small>Web_Publisher. Front_end_Developer.</small>
+          </div>
           <ul>
             <li className='work'>
               <strong>Work Experience</strong>
