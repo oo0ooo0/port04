@@ -5,10 +5,17 @@ import { createTitle } from '../utils/common';
 
 import styled from 'styled-components';
 import LikedButton from './LikedButton';
-import WorkText from './WorkText';
 
 const StyledItem = styled.div`
+  border-top: 1px solid lightgray;
+
+  padding-top: 3px;
+
   .item-image-wrap {
+    height: 100%;
+    max-height: 40vw;
+    min-height: 40vw;
+    overflow: hidden;
     .item-image {
       width: 100%;
     }
@@ -19,7 +26,7 @@ const StyledItem = styled.div`
     display: inline-block;
     min-height: 40px;
     max-height: 40px;
-    white-space: normal;
+    white-space: pre-wrap;
     overflow: hidden;
     text-overflow: ellipsis;
     word-wrap: break-word;
@@ -81,9 +88,10 @@ const MemoizeItem = React.memo(function Item({
 
   const handleClick = () => {
     dispatch({ type: 'Work_LIKE', payload: { id } });
+    console.log('click');
   };
 
-  const shareUrl = encodeURIComponent(`https://icd-lovat.now.sh/work/${id}`);
+  const shareUrl = encodeURIComponent(`https://port04.now.sh/work/${id}`);
   return (
     <StyledItem>
       <Link to={{ pathname: `/work/${id}` }}>
@@ -91,7 +99,9 @@ const MemoizeItem = React.memo(function Item({
           <img src={mediaList[0].url} className='item-image' alt='피드 대표이미지' />
         </figure>
 
-        <article className='item-info'></article>
+        <article className='item-info'>
+          <p>{createTitle(text)}</p>
+        </article>
       </Link>
       <div className='item-footer'>
         <em className='item-date'>{createdAt}</em>
