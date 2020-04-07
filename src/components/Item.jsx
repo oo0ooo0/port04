@@ -39,7 +39,7 @@ const StyledItem = styled.div`
     padding: 10px 0px;
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 12px;
     color: #999;
 
     ul {
@@ -58,18 +58,10 @@ const StyledItem = styled.div`
       font-style: italic;
     }
   }
-  @media (max-width: 960px) {
-    /* item */
-    .item-image-wrap .item-md {
-      img {
-        width: 0.8vw;
-      }
-      .item-md-name {
-        font-size: 2vw;
-      }
-    }
-    .item-date.info .tags h4 {
-      font-size: 2.4vw;
+
+  @media (max-width: 370px) {
+    .item-footer {
+      font-size: 3vw;
     }
   }
 `;
