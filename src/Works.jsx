@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Item from './components/Item';
 import Masonry from 'react-masonry-css';
 import { useSelector } from 'react-redux';
+import { calcColumn } from './utils/common';
 
 const StyledWorks = styled.main`
   .my-masonry-grid {
@@ -10,30 +11,37 @@ const StyledWorks = styled.main`
     display: flex;
     margin-left: -20px; /* gutter size offset */
     width: auto;
-  }
-  .my-masonry-grid_column {
-    padding-left: 20px; /* gutter size */
-    background-clip: padding-box;
-  }
-
-  .my-masonry-grid_column > div {
-    /* change div to reference your elements you put in <Masonry> */
-    background: none;
-    margin-bottom: 20px;
+    .my-masonry-grid_column {
+      padding-left: 20px; /* gutter size */
+      background-clip: padding-box;
+      > div {
+        /* change div to reference your elements you put in <Masonry> */
+        background: none;
+        margin-bottom: 20px;
+      }
+    }
   }
 `;
 
 function Works() {
   const works = useSelector((state) => state.works);
+  const [columnNum, setColumnNum] = useState(calcColumn);
+  function resizeHandler() {
+    setColumnNum(calcColumn());
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', resizeHandler);
+    return () => {
+      window.removeEventListener('resize', resizeHandler);
+    };
+  }, []);
   return (
     <StyledWorks>
       <h2 className='title'>Work</h2>
-      <h3>
-        <br />
-        <br />
-      </h3>
+      <h3></h3>
       <Masonry
-        breakpointCols={3}
+        breakpointCols={columnNum}
         className='my-masonry-grid'
         columnClassName='my-masonry-grid_column'
       >
