@@ -13,9 +13,11 @@ const StyledContact = styled.main`
     .contactImg {
       display: flex;
       width: 30%;
-      height: 100%;
+      height: 30%;
       img {
         width: 100%;
+        height: 100%;
+        flex: none;
       }
     }
 
@@ -25,6 +27,7 @@ const StyledContact = styled.main`
       flex-direction: column;
       align-items: center;
       width: 60%;
+      white-space: nowrap;
       h4 {
         font-size: 34px;
       }
