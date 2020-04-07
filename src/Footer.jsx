@@ -19,8 +19,8 @@ function Footer() {
           <div className='copyw'>ⓒ 2020 oo0ooo0.com. All Rights Reserved</div>
           <div className='address'>
             <p>
-              built by oo0ooo0 | <a href='https://github.com/oo0ooo0'>github.com/oo0ooo0</a> |
-              E-mail kkjjajja@gmail.com
+              built by oo0ooo0 | <a href='https://github.com/oo0ooo0'> github.com/oo0ooo0 </a> |
+              kkjjajja@gmail.com
             </p>
 
             <p>Seoul. Korea</p>
