@@ -13,9 +13,9 @@ const StyledContact = styled.main`
     .contactImg {
       display: flex;
       width: 30%;
+      height: 100%;
       img {
         width: 100%;
-        flex: none;
       }
     }
 
