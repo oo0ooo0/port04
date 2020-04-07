@@ -96,9 +96,9 @@ const StyledHome = styled.main`
 function Home() {
   return (
     <StyledHome>
-      <div class='row'>
-        <div class='aniBox'>
-          <div class='ani-text'>
+      <div className='row'>
+        <div className='aniBox'>
+          <div className='ani-text'>
             <p>PORTFOLIO</p>
             {/* <p>SITE</p> */}
           </div>
