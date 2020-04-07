@@ -11,12 +11,7 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-7cac1fae0b734439.jpg"
-          },
-          {
-            "id": 2305,
-            "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-c2c753e478bd4ff7.jpg"
+            "url": "/img/web_s_a.png"
           }
         ],
         "createdAt": "2019.09"
@@ -25,17 +20,13 @@
       {
         "id": 449,
         "text": "Responsive web\nPublished to learn 'Responsive web'\n\nHTML CSS JAVASCRIPT\njquery lightgallery.js/ slick.js\n\nhttps://github.com/oo0ooo0/web_r\n",
+        "likedCount": 1,
         "siteSrc": "https://web-r.now.sh/",
         "mediaList": [
           {
             "id": 2304,
             "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-7cac1fae0b734439.jpg"
-          },
-          {
-            "id": 2305,
-            "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-c2c753e478bd4ff7.jpg"
+            "url": "/img/web_r_a.png"
           }
         ],
         "createdAt": "2019.09"
@@ -49,12 +40,7 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-7cac1fae0b734439.jpg"
-          },
-          {
-            "id": 2305,
-            "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-c2c753e478bd4ff7.jpg"
+            "url": "/img/web_c_a.png"
           }
         ],
         "createdAt": "2019.10"
@@ -63,17 +49,13 @@
       {
         "id": 451,
         "text": "Commercial web(2)\nCloned 'Boostcamp' to responsive.ver\n\nTo practice responsive websites and commercial websites, it was developed by referring to the existing websites of 'Boostcamp 2019(boostcamp.connect.or.kr)' and developing them into responsive websites.\n\n반응 형 웹 사이트. 상업용 웹 사이트를 연습하며 기존의 'Boostcamp 2019(boostcamp.connect.or.kr)'웹 사이트를 참고하여 반응형 웹 사이트로 개발했습니다.\n\nHTML CSS\nslick.js\n\nhttps://github.com/Jamin-KK/boostcamp_copy_responsive.ver　\nImages by vogue.com",
+        "likedCount": 3,
         "siteSrc": "https://jamin-kk.github.io/boostcamp_copy_responsive.ver/",
         "mediaList": [
           {
             "id": 2304,
             "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-7cac1fae0b734439.jpg"
-          },
-          {
-            "id": 2305,
-            "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-c2c753e478bd4ff7.jpg"
+            "url": "/img/boost_a.png"
           }
         ],
         "createdAt": "2019.10"
@@ -87,12 +69,7 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-7cac1fae0b734439.jpg"
-          },
-          {
-            "id": 2305,
-            "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-c2c753e478bd4ff7.jpg"
+            "url": "/img/ai_a.png"
           }
         ],
         "createdAt": "2019.11"
@@ -105,12 +82,17 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-7cac1fae0b734439.jpg"
+            "url": "/img/chosangart1.png"
           },
           {
             "id": 2305,
             "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-c2c753e478bd4ff7.jpg"
+            "url": "/img/chosangart2.png"
+          },
+          {
+            "id": 2306,
+            "type": "image",
+            "url": "/img/chosangart3.png"
           }
         ],
         "createdAt": "2019.11"
@@ -118,17 +100,13 @@
       {
         "id": 454,
         "text": "PYORANG\n(Creative Art Education Group)\n\nUsing 'imweb',created a website that shares group activities and blog posts.\n'imweb'을 사용하여 그룹 활동과 블로그 게시물을 공유하는 웹 사이트를 만들었습니다.\n\nimWeb HTML CSS\n　\n",
+        "likedCount": 1,
         "siteSrc": "https://www.pyoranglab.com/",
         "mediaList": [
           {
             "id": 2304,
             "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-7cac1fae0b734439.jpg"
-          },
-          {
-            "id": 2305,
-            "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-c2c753e478bd4ff7.jpg"
+            "url": "/img/pyorang_a.png"
           }
         ],
         "createdAt": "2019.12"
@@ -141,12 +119,7 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-7cac1fae0b734439.jpg"
-          },
-          {
-            "id": 2305,
-            "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-c2c753e478bd4ff7.jpg"
+            "url": "/img/port2_a.png"
           }
         ],
         "createdAt": "2020.01"
@@ -159,12 +132,17 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-7cac1fae0b734439.jpg"
+            "url": "/img/chosangart1.png"
           },
           {
             "id": 2305,
             "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-c2c753e478bd4ff7.jpg"
+            "url": "/img/chosangart2.png"
+          },
+          {
+            "id": 2306,
+            "type": "image",
+            "url": "/img/chosangart3.png"
           }
         ],
         "createdAt": "2019.12"
@@ -172,6 +150,7 @@
       {
         "id": 457,
         "text": "PORTFOLIO 2020\n(Personal portfolio website)\n\nPlanning a website for sharing portfolios and available animations. Design and Development.\n포트폴리오 및 활용가능 기술을 공유를 위한 웹사이트를 제작함.\n\nHTML CSS JAVASCRIPT\nreact.js redux styled-components react-masonry-css react-lightgallery\n\nhttps://github.com/oo0ooo0/port04\n",
+        "likedCount": 1,
         "siteSrc": "https://port04.now.sh/",
         "mediaList": [
           {
