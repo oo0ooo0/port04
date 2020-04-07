@@ -39,7 +39,6 @@ function Works() {
   return (
     <StyledWorks>
       <h2 className='title'>Work</h2>
-      <h3></h3>
       <Masonry
         breakpointCols={columnNum}
         className='my-masonry-grid container'

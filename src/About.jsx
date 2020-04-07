@@ -130,7 +130,11 @@ function About() {
             </li>
           </ul>
           <button className='btn'>
-            <a href='https://drive.google.com/open?id=19TLC0y5zWTlCRB5JyFohlHt7ybjhRtS5'>
+            <a
+              href='https://drive.google.com/open?id=19TLC0y5zWTlCRB5JyFohlHt7ybjhRtS5'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               Resume link
             </a>
           </button>

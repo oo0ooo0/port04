@@ -65,8 +65,11 @@ function Contact() {
           <p>Web Publisher. Front-end Developer.</p>
           <address>Gwanak-gu, Seoul, Republic of Korea</address>
           <div className='sns'>
-            <a href='mailTo:kkjjajja@gmail.com'>Email: kkjjajja@gmail.com</a> <br />
-            <a href='https://www.instagram.com/oo.0oo_o0' target='_blank'>
+            <a href='mailTo:kkjjajja@gmail.com' target='_blank' rel='noopener noreferrer'>
+              Email: kkjjajja@gmail.com
+            </a>{' '}
+            <br />
+            <a href='https://www.instagram.com/oo.0oo_o0' target='_blank' rel='noopener noreferrer'>
               instagram: instagram.com/oo.0oo_o0
             </a>
           </div>

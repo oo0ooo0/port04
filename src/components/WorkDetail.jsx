@@ -122,7 +122,9 @@ function WorkDetail() {
           <h4>{createTitle(text)}</h4>
           <WorkText>{text}</WorkText>
           <button className='btn'>
-            <a href='{siteSrc}'>사이트방문하기</a>
+            <a href='{siteSrc}' target='_blank' rel='noopener noreferrer'>
+              사이트방문하기
+            </a>
           </button>
         </div>
         <Comments />
