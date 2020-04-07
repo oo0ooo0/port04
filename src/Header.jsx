@@ -93,16 +93,16 @@ function Header() {
         <div className='header-cont'>
           <div className='logo'>
             <h1>
-              <a href='/'>portfolio</a>
+              <a href='/works'>portfolio</a>
             </h1>
           </div>
           {/* //logo */}
 
           <div className='gnb'>
             <ul>
-              <li>
+              {/* <li>
                 <Link to={{ pathname: `/` }}>HOME</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to={{ pathname: `/about` }}>ABOUT</Link>
               </li>

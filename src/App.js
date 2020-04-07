@@ -21,7 +21,7 @@ function App() {
 
         <MainContainer>
           <Route path={'/'} exact>
-            <Home />
+            <Works />
           </Route>
           <Route path={'/about'} exact>
             <About />
