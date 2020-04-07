@@ -17,7 +17,7 @@ const StyledWorks = styled.main`
       > div {
         /* change div to reference your elements you put in <Masonry> */
         background: none;
-        margin-bottom: 20px;
+        margin-bottom: 100px;
       }
     }
   }
