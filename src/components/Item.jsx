@@ -39,7 +39,6 @@ const StyledItem = styled.div`
     padding: 10px 0px;
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
     color: #999;
 
     ul {

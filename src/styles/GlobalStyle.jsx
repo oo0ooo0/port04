@@ -85,7 +85,7 @@ h4 {
 }
 
 p {
-  font: normal 400 14px/22px 'Lato';
+  font: normal 400 15px/22px 'Lato';
   color: #1d1e21;
 }
 

@@ -8,6 +8,9 @@ const StyledFooter = styled.footer`
     margin-top: 100px;
     padding: 20px 0px 10px 0px;
     text-align: center;
+    p {
+      font-size: 12px;
+    }
   }
 `;
 
