@@ -8,10 +8,12 @@ import LikedButton from './LikedButton';
 
 const StyledItem = styled.div`
   border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
 
-  padding-top: 3px;
+  padding: 10px 0px;
 
   .item-image-wrap {
+    margin-bottom: 10px;
     height: 100%;
     max-height: 40vw;
     min-height: 40vw;
@@ -34,47 +36,9 @@ const StyledItem = styled.div`
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
   }
-
-  .item-footer {
-    padding: 10px 0px;
-    display: flex;
-    justify-content: space-between;
-    color: #999;
-
-    ul {
-      display: flex;
-      li {
-        margin-left: 10px;
-        i {
-          margin-right: 5px;
-        }
-        a {
-          color: #999;
-        }
-      }
-    }
-    .item-date {
-      font-style: italic;
-    }
-  }
-
-  @media (max-width: 370px) {
-    .item-footer {
-      font-size: 3vw;
-    }
-  }
 `;
 
-const MemoizeItem = React.memo(function Item({
-  id,
-  mediaList,
-  text,
-  likedCount = 0,
-  replyCount = 0,
-  sharedCount = 0,
-  createdAt,
-  isLiked,
-}) {
+const MemoizeItem = React.memo(function Item({ id, mediaList, text }) {
   const dispatch = useDispatch();
 
   const handleClick = () => {
@@ -94,38 +58,6 @@ const MemoizeItem = React.memo(function Item({
           <p>{createTitle(text)}</p>
         </article>
       </Link>
-      <div className='item-footer'>
-        <em className='item-date'>{createdAt}</em>
-        <ul>
-          <li onClick={handleClick}>
-            <LikedButton color={isLiked ? 'red' : 'lightGray'}>
-              <i className='fas fa-heart'></i>
-            </LikedButton>
-            <span>{likedCount}</span>
-          </li>
-          <li>
-            <i className='far fa-comment-alt'></i>
-            <span>{replyCount}</span>
-          </li>
-          <li>
-            <div
-              data-href={`https://icd-lovat.now.sh/work/${id}`}
-              data-layout='button_count'
-              data-size='small'
-            >
-              <a
-                target='_blank'
-                rel='noopener noreferrer'
-                href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}%2F&amp;src=sdkpreparse`}
-                className='fb-xfbml-parse-ignore'
-              >
-                <i className='fab fa-facebook-square'></i>
-                <span>{sharedCount}</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
     </StyledItem>
   );
 });
