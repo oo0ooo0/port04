@@ -126,7 +126,7 @@
       },
       {
         "id": 456,
-        "text": "Chosang.art\n(Artist Chosang's website)\n\nUsing 'Create React App',created a website that shares Artist's activities and Wors.\n'Create React App'을 사용하요 작가의 활동과 작품을 공유하는 웹 사이트를 만들었습니다.\n\nHTML CSS JAVASCRIPT\nreact.js redux styled-components react-masonry-css react-lightgallery\n",
+        "text": "Chosang.art\n(Artist Chosang's website)\n\nUsing 'Create React App',created a website that shares Artist's activities and Wors.\n'Create React App'을 사용하여 작가의 활동과 작품을 공유하는 웹 사이트를 만들었습니다.\n\nHTML CSS JAVASCRIPT\nreact.js redux styled-components react-masonry-css react-lightgallery\n",
         "siteSrc": "https://chosangarts.now.sh/",
         "mediaList": [
           {
