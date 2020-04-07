@@ -15,6 +15,7 @@ const StyledContact = styled.main`
       width: 30%;
       img {
         width: 100%;
+        flex: none;
       }
     }
 
