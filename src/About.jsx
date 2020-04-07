@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 
 const StyledAbout = styled.main`
@@ -66,6 +66,11 @@ const StyledAbout = styled.main`
 `;
 
 function About() {
+  useEffect(() => {
+    setTimeout(() => {
+      window.scroll(0, 0);
+    }, 100);
+  });
   return (
     <StyledAbout>
       <h2 className='title'>About</h2>

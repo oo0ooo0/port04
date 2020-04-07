@@ -36,6 +36,13 @@ function Works() {
       window.removeEventListener('resize', resizeHandler);
     };
   }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      window.scroll(0, 0);
+    }, 100);
+  });
+
   return (
     <StyledWorks>
       <h2 className='title'>Work</h2>

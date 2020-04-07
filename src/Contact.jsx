@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 
 const StyledContact = styled.main`
@@ -52,6 +52,11 @@ const StyledContact = styled.main`
 `;
 
 function Contact() {
+  useEffect(() => {
+    setTimeout(() => {
+      window.scroll(0, 0);
+    }, 100);
+  });
   return (
     <StyledContact>
       <h2 className='title'>Contact</h2>
