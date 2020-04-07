@@ -42,7 +42,7 @@ function Works() {
       <h3></h3>
       <Masonry
         breakpointCols={columnNum}
-        className='my-masonry-grid'
+        className='my-masonry-grid container'
         columnClassName='my-masonry-grid_column'
       >
         {Object.keys(works)

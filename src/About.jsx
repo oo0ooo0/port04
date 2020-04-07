@@ -5,8 +5,6 @@ const StyledAbout = styled.main`
   main {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
-    padding: 20px 0px;
 
     .name-wrap {
       text-align: center;
@@ -72,7 +70,7 @@ function About() {
     <StyledAbout>
       <h2 className='title'>About</h2>
 
-      <main>
+      <main className='container'>
         <div className='name-wrap'>
           <h3 className='name'>
             <strong>KWON_JAMIN.</strong>
@@ -132,7 +130,9 @@ function About() {
             </li>
           </ul>
           <button className='btn'>
-            <a href=''>Resume link</a>
+            <a href='https://drive.google.com/open?id=19TLC0y5zWTlCRB5JyFohlHt7ybjhRtS5'>
+              Resume link
+            </a>
           </button>
         </div>
       </main>

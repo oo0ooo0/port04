@@ -94,6 +94,11 @@ body {
   font: normal 400 12px/1.5 'Lato';
 }
 
+ /* container */
+.container{
+padding: 50px 0px;
+}
+
 /* font style reset */
 address {
   font-style: normal;

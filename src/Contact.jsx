@@ -9,7 +9,6 @@ const StyledContact = styled.main`
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
-    padding: 50px 0px;
     .contactImg {
       display: flex;
       width: 30%;
@@ -57,7 +56,7 @@ function Contact() {
     <StyledContact>
       <h2 className='title'>Contact</h2>
 
-      <div className='container'>
+      <main className='container'>
         <div className='contactImg'>
           <img src='img/Contact.png' alt='컨택트 이미지'></img>
         </div>
@@ -72,7 +71,7 @@ function Contact() {
             </a>
           </div>
         </div>
-      </div>
+      </main>
     </StyledContact>
   );
 }
