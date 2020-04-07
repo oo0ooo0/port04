@@ -5,18 +5,16 @@ const StyledContact = styled.main`
   height: 65vh;
   .container {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 30px;
     .contactImg {
       display: flex;
-      width: 30%;
-      height: 30%;
+      width: 20%;
       img {
         width: 100%;
-        height: 100%;
-        /* flex: none; */
       }
     }
 
@@ -39,11 +37,6 @@ const StyledContact = styled.main`
       .sns {
         text-align: center;
       }
-    }
-  }
-  @media (max-width: 768px) {
-    .container {
-      margin: 40px 0px;
     }
   }
 `;
