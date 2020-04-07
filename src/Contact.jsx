@@ -42,9 +42,6 @@ const StyledContact = styled.main`
     }
   }
   @media (max-width: 768px) {
-    .contactImg {
-      display: none;
-    }
     .container {
       margin: 40px 0px;
     }
