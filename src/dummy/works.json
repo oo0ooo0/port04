@@ -82,17 +82,22 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "/img/chosangart1.jpeg"
+            "url": "/img/chosangart_wix_1.jpeg"
           },
           {
             "id": 2305,
             "type": "image",
-            "url": "/img/chosangart2.jpeg"
+            "url": "/img/chosangart_wix_2.jpeg"
           },
           {
             "id": 2306,
             "type": "image",
-            "url": "/img/chosangart3.jpeg"
+            "url": "/img/chosangart_wix_3.jpeg"
+          },
+          {
+            "id": 2307,
+            "type": "image",
+            "url": "/img/chosangart_wix_4.jpeg"
           }
         ],
         "createdAt": "2019.11"
@@ -156,12 +161,17 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-7cac1fae0b734439.jpg"
+            "url": "/img/port4_1.jpeg"
           },
           {
             "id": 2305,
             "type": "image",
-            "url": "https://s3.ap-northeast-2.amazonaws.com/dcode-prod-bucket/feeds/boss20aw/1582624455-c2c753e478bd4ff7.jpg"
+            "url": "/img/port4_2.jpeg"
+          },
+          {
+            "id": 2306,
+            "type": "image",
+            "url": "/img/port4_3.jpeg"
           }
         ],
         "createdAt": "2020.12"
