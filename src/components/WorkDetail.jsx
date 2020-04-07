@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import WorkText from './WorkText';
-import Comments from './Comments';
 import { useHistory, useParams, useLocation } from 'react-router-dom';
 import { createTitle } from '../utils/common';
 import { useSelector } from 'react-redux';
@@ -122,12 +121,11 @@ function WorkDetail() {
           <h4>{createTitle(text)}</h4>
           <WorkText>{text}</WorkText>
           <button className='btn'>
-            <a href='{siteSrc}' target='_blank' rel='noopener noreferrer'>
+            <a href={siteSrc} target='_blank' rel='noopener noreferrer'>
               사이트방문하기
             </a>
           </button>
         </div>
-        <Comments />
       </BoardArea>
     </StyledWorkDetailWrapper>
   );
