@@ -22,7 +22,11 @@ function Footer() {
           <div className='copyw'>ⓒ 2020 oo0ooo0.com. All Rights Reserved</div>
           <div className='address'>
             <p>
-              built by oo0ooo0 | <a href='https://github.com/oo0ooo0'> github.com/oo0ooo0 </a> |
+              built by oo0ooo0 |
+              <a href='https://github.com/oo0ooo0' target='_blank' rel='noopener noreferrer'>
+                github.com/oo0ooo0 |
+              </a>
+              <a href='maile-to:kkjjajja@gmail.com' target='_blank' rel='noopener noreferrer'></a>
               kkjjajja@gmail.com
             </p>
 
