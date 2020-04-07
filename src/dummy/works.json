@@ -11,7 +11,7 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "/img/web_s_a.png"
+            "url": "/img/web_s_a.jpeg"
           }
         ],
         "createdAt": "2019.09"
@@ -26,7 +26,7 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "/img/web_r_a.png"
+            "url": "/img/web_r_a.jpeg"
           }
         ],
         "createdAt": "2019.09"
@@ -40,7 +40,7 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "/img/web_c_a.png"
+            "url": "/img/web_c_a.jpeg"
           }
         ],
         "createdAt": "2019.10"
@@ -55,7 +55,7 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "/img/boost_a.png"
+            "url": "/img/boost_a.jpeg"
           }
         ],
         "createdAt": "2019.10"
@@ -69,7 +69,7 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "/img/ai_a.png"
+            "url": "/img/ai_a.jpeg"
           }
         ],
         "createdAt": "2019.11"
@@ -82,17 +82,17 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "/img/chosangart1.png"
+            "url": "/img/chosangart1.jpeg"
           },
           {
             "id": 2305,
             "type": "image",
-            "url": "/img/chosangart2.png"
+            "url": "/img/chosangart2.jpeg"
           },
           {
             "id": 2306,
             "type": "image",
-            "url": "/img/chosangart3.png"
+            "url": "/img/chosangart3.jpeg"
           }
         ],
         "createdAt": "2019.11"
@@ -106,7 +106,7 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "/img/pyorang_a.png"
+            "url": "/img/pyorang_a.jpeg"
           }
         ],
         "createdAt": "2019.12"
@@ -119,7 +119,7 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "/img/port2_a.png"
+            "url": "/img/port2_a.jpeg"
           }
         ],
         "createdAt": "2020.01"
@@ -132,17 +132,17 @@
           {
             "id": 2304,
             "type": "image",
-            "url": "/img/chosangart1.png"
+            "url": "/img/chosangart1.jpeg"
           },
           {
             "id": 2305,
             "type": "image",
-            "url": "/img/chosangart2.png"
+            "url": "/img/chosangart2.jpeg"
           },
           {
             "id": 2306,
             "type": "image",
-            "url": "/img/chosangart3.png"
+            "url": "/img/chosangart3.jpeg"
           }
         ],
         "createdAt": "2019.12"
