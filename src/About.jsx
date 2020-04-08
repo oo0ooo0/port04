@@ -7,7 +7,6 @@ const StyledAbout = styled.main`
     justify-content: space-between;
 
     .image-wrap {
-      /* border: 1px solid red; */
       display: flex;
       width: 30%;
       height: 30%;
@@ -43,11 +42,16 @@ const StyledAbout = styled.main`
         margin-top: 10px;
         li {
           width: 100%;
+          line-height: 1.5;
+          padding: 5px;
         }
         .work,
         .edu {
           display: inline-block;
           margin-bottom: 30px;
+        }
+        strong {
+          margin-top: 10px;
         }
         .about-title {
           display: inline-block;
@@ -55,17 +59,13 @@ const StyledAbout = styled.main`
           padding-top: 10px;
           font-size: 20px;
           border-top: 1px solid lightgray;
-          width: 30%;
-        }
-
-        strong {
-          margin-top: 10px;
+          width: auto;
         }
       }
     }
   }
 
-  @media (max-width: 960px) {
+  @media (max-width: 768px) {
     main {
       display: block;
       .image-wrap {
@@ -77,13 +77,21 @@ const StyledAbout = styled.main`
           height: 100%;
         }
       }
+      strong {
+      }
       .textWrap {
-        border-top: 0px solid lightGray;
-        border-bottom: 0px solid lightGray;
-        margin-top: 30px;
         width: 100%;
         text-align: center;
-
+        ul {
+          li {
+            font-size: 3.5vw;
+            width: auto;
+            line-height: 1.5;
+          }
+          .about-title {
+            font-size: 4vw;
+          }
+        }
         button {
           width: 100%;
         }
@@ -132,20 +140,18 @@ function About() {
                 </li>
                 <li>
                   <strong>스마일게이트. 아시아문화의 전당 / 코딩교육 강사</strong> <br />
-                  스마일게이트 보조강사 2017 10 - 2017 11, 경기. 분당 <br />
-                  아시아문화의 전당 주강사 2018 07 - 2018 11, 전북. 광주 <br />
-                  Scratch, Arduino, Processing 을 이용한 초등생 코딩교육
+                  스마일게이트 보조강사 2017 10 - 11, 경기. 분당 <br />
+                  아시아문화의 전당 주강사 2018 07 - 11, 전북. 광주 <br />
+                  Scratch, Arduino, Processing을 이용한 코딩교육
                 </li>
               </ul>
             </li>
             <li className='edu'>
               <strong className='about-title'>EDUCATION. LICENSE</strong>
               <ul>
-                <li>세종IT직업전문학교 / 반응형웹디자인. 퍼블리싱 과정 (2019.12 수료)</li>
-                <li>
-                  웹디자인 기능사 / 관련부처: 산업통상자원부 시행기관: 한국산업인력공단 2019 12
-                </li>
-                <li>GQT 그래픽기술자격 1급 /시행기관: 한국생산성본부 2019 09</li>
+                <li>세종IT직업전문학교 / 반응형 퍼블리싱 과정 (2019.12 수료)</li>
+                <li>웹디자인 기능사 / 한국산업인력공단 2019 12</li>
+                <li>GQT 그래픽기술자격 1급 / 한국생산성본부 2019 09</li>
                 <li>Coding Specialist 1급 / 시행기관: YBMIT 2017 06</li>
               </ul>
             </li>
@@ -163,7 +169,7 @@ function About() {
               </ul>
             </li>
           </ul>
-          <button className='btn '>
+          <button className='btn'>
             <a
               href='https://drive.google.com/open?id=19TLC0y5zWTlCRB5JyFohlHt7ybjhRtS5'
               target='_blank'

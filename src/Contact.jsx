@@ -12,9 +12,13 @@ const StyledContact = styled.main`
     align-items: center;
     .contactImg {
       display: flex;
-      width: 20%;
+      border: 1px solid red;
+      width: 40%;
+      height: 30%;
       img {
         width: 100%;
+        height: 100%;
+        flex: none;
       }
     }
 
@@ -53,7 +57,7 @@ function Contact() {
 
       <main className='container'>
         <div className='contactImg'>
-          <img src='img/Contact.png' alt='컨택트 이미지'></img>
+          <img src='img/Contact.jpeg' alt='컨택트 이미지'></img>
         </div>
         <div className='myform'>
           <h4>Kwon-jamin</h4>
