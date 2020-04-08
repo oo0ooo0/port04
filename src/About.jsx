@@ -163,10 +163,10 @@ function About() {
             <li className='edu'>
               <strong className='about-title'>EDUCATION. LICENSE</strong>
               <ul>
-                <li>세종IT직업전문학교 / 반응형 퍼블리싱 과정 (2019.12 수료)</li>
-                <li>웹디자인 기능사 / 한국산업인력공단 2019 12</li>
-                <li>GQT 그래픽기술자격 1급 / 한국생산성본부 2019 09</li>
-                <li>Coding Specialist 1급 / 시행기관: YBMIT 2017 06</li>
+                <li>세종IT직업전문학교 / 반응형 퍼블리싱 과정 19.12</li>
+                <li>웹디자인 기능사 / 한국산업인력공단 19.12</li>
+                <li>GQT 그래픽기술자격 1급 / 한국생산성본부 19.09</li>
+                <li>Coding Specialist 1급 / 시행기관: YBMIT 17.06</li>
               </ul>
             </li>
             <li className='skill'>
