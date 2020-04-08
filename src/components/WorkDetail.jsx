@@ -120,11 +120,9 @@ function WorkDetail() {
           <em>{createdAt}</em>
           <h4>{createTitle(text)}</h4>
           <WorkText>{text}</WorkText>
-          <button className='btn'>
-            <a href={siteSrc} target='_blank' rel='noopener noreferrer'>
-              사이트방문하기
-            </a>
-          </button>
+          <a href={siteSrc} target='_blank' rel='noopener noreferrer'>
+            <button className='btn'>사이트방문하기</button>
+          </a>
         </div>
       </BoardArea>
     </StyledWorkDetailWrapper>

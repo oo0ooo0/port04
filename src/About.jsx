@@ -183,15 +183,13 @@ function About() {
               </ul>
             </li>
           </ul>
-          <button className='btn'>
-            <a
-              href='https://drive.google.com/open?id=19TLC0y5zWTlCRB5JyFohlHt7ybjhRtS5'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Resume link
-            </a>
-          </button>
+          <a
+            href='https://drive.google.com/open?id=19TLC0y5zWTlCRB5JyFohlHt7ybjhRtS5'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <button className='btn'>Resume link</button>
+          </a>
         </div>
       </main>
     </StyledAbout>
