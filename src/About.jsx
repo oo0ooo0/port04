@@ -22,14 +22,15 @@ const StyledAbout = styled.main`
       text-align: left;
       padding: 0px 20px;
       .name-wrap {
-        margin-bottom: 30px;
         .name {
-          font-size: 30px;
+          font-size: 50px;
         }
-      }
-      small {
-        font-size: 13px;
-        white-space: nowrap;
+        small {
+          font-size: 15px;
+          letter-spacing: 1.9px;
+          word-spacing: 3px;
+          white-space: nowrap;
+        }
       }
 
       p {
@@ -77,9 +78,22 @@ const StyledAbout = styled.main`
           height: 100%;
         }
       }
-      strong {
-      }
+
       .textWrap {
+        .name-wrap {
+          margin: 40px 0px 10px 0px;
+          .name {
+            font-size: 30px;
+            font-size: 6vw;
+            line-height: 1;
+          }
+          small {
+            font-size: 2vw;
+            letter-spacing: 0.1vw;
+            word-spacing: 0.4vw;
+          }
+        }
+        margin-top: 30px;
         width: 100%;
         text-align: center;
         ul {
@@ -117,9 +131,9 @@ function About() {
         <div className='textWrap'>
           <div className='name-wrap'>
             <h3 className='name'>
-              <strong>KWON_JAMIN.</strong>
+              <strong>KWON_JAMIN</strong>
             </h3>
-            <small>Web_Publisher. Front_end_Developer.</small>
+            <small>| Web Publisher . Front end Developer |</small>
           </div>
           <ul>
             <li className='work'>

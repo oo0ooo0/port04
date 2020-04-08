@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 
 const StyledContact = styled.main`
-  height: 65vh;
   .container {
+    margin-top: 60px;
+
     width: 100%;
     height: 100%;
     display: flex;
@@ -12,8 +13,7 @@ const StyledContact = styled.main`
     align-items: center;
     .contactImg {
       display: flex;
-      border: 1px solid red;
-      width: 40%;
+      width: 30%;
       height: 30%;
       img {
         width: 100%;
@@ -22,7 +22,7 @@ const StyledContact = styled.main`
       }
     }
 
-    .myform {
+    .text-form {
       padding-top: 30px;
       display: flex;
       flex-direction: column;
@@ -43,6 +43,16 @@ const StyledContact = styled.main`
       }
     }
   }
+  @media (max-width: 768px) {
+    main {
+      .image-wrap {
+        img {
+          width: 60%;
+          height: 60%;
+        }
+      }
+    }
+  }
 `;
 
 function Contact() {
@@ -59,7 +69,7 @@ function Contact() {
         <div className='contactImg'>
           <img src='img/Contact.jpeg' alt='컨택트 이미지'></img>
         </div>
-        <div className='myform'>
+        <div className='text-form'>
           <h4>Kwon-jamin</h4>
           <p>Web Publisher. Front-end Developer.</p>
           <address>Gwanak-gu, Seoul, Republic of Korea</address>
