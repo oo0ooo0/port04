@@ -36,9 +36,15 @@ const StyledItem = styled.div`
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
   }
+  .item-footer {
+    em {
+      color: lightgray;
+      font-style: normal;
+    }
+  }
 `;
 
-const MemoizeItem = React.memo(function Item({ id, mediaList, text }) {
+const MemoizeItem = React.memo(function Item({ id, mediaList, text, createdAt }) {
   const dispatch = useDispatch();
 
   const handleClick = () => {
@@ -57,6 +63,9 @@ const MemoizeItem = React.memo(function Item({ id, mediaList, text }) {
         <article className='item-info'>
           <p>{createTitle(text)}</p>
         </article>
+        <div className='item-footer'>
+          <em className='item-date'>{createdAt}</em>
+        </div>
       </Link>
     </StyledItem>
   );
